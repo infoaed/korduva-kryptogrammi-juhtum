@@ -1,0 +1,5 @@
+47608082724/20251015055435366+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435366+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+47608082724/20251015055435407+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435407+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+47608082724/20251015055435718+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435718+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+47608082724/20251015055435724+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435724+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+47608082724/20251015055435766+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435766+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
