@@ -6,4 +6,4 @@ integrity:
   log_revoked: out-4/KOV_2025.question-KOV_2025.revoke.log2
   log_anonymised: out-4/KOV_2025.question-KOV_2025.anonymize.log3
   bb_errors: out-2/ballotbox_errors.txt
-  abort_early: false
+  #abort_early: false
