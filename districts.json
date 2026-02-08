@@ -1,0 +1,1075 @@
+{
+  "election": "KOV_2025",
+  "regions": {
+    "0130": {
+      "parish": "Alutaguse vald",
+      "county": "Ida-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0141": {
+      "parish": "Anija vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0145": {
+      "parish": "Antsla vald",
+      "county": "Võru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0171": {
+      "parish": "Elva vald",
+      "county": "Tartu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0176": {
+      "parish": "Haabersti linnaosa",
+      "county": "Tallinn",
+      "state": "Eesti Vabariik"
+    },
+    "0184": {
+      "parish": "Haapsalu linn",
+      "county": "Lääne maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0191": {
+      "parish": "Haljala vald",
+      "county": "Lääne-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0198": {
+      "parish": "Harku vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0205": {
+      "parish": "Hiiumaa vald",
+      "county": "Hiiu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0214": {
+      "parish": "Häädemeeste vald",
+      "county": "Pärnu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0245": {
+      "parish": "Jõelähtme vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0247": {
+      "parish": "Jõgeva vald",
+      "county": "Jõgeva maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0250": {
+      "parish": "Jõhvi vald (ühinevad Jõhvi vald ja Toila vald)",
+      "county": "Ida-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0255": {
+      "parish": "Järva vald",
+      "county": "Järva maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0272": {
+      "parish": "Kadrina vald",
+      "county": "Lääne-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0283": {
+      "parish": "Kambja vald",
+      "county": "Tartu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0284": {
+      "parish": "Kanepi vald",
+      "county": "Põlva maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0291": {
+      "parish": "Kastre vald",
+      "county": "Tartu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0293": {
+      "parish": "Kehtna vald",
+      "county": "Rapla maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0296": {
+      "parish": "Keila linn",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0298": {
+      "parish": "Kesklinna linnaosa",
+      "county": "Tallinn",
+      "state": "Eesti Vabariik"
+    },
+    "0303": {
+      "parish": "Kihnu vald",
+      "county": "Pärnu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0305": {
+      "parish": "Kiili vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0317": {
+      "parish": "Kohila vald",
+      "county": "Rapla maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0321": {
+      "parish": "Kohtla-Järve linn",
+      "county": "Ida-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0338": {
+      "parish": "Kose vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0339": {
+      "parish": "Kristiine linnaosa",
+      "county": "Tallinn",
+      "state": "Eesti Vabariik"
+    },
+    "0353": {
+      "parish": "Kuusalu vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0387": {
+      "parish": "Lasnamäe linnaosa",
+      "county": "Tallinn",
+      "state": "Eesti Vabariik"
+    },
+    "0424": {
+      "parish": "Loksa linn",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0430": {
+      "parish": "Lääneranna vald",
+      "county": "Pärnu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0431": {
+      "parish": "Lääne-Harju vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0432": {
+      "parish": "Luunja vald",
+      "county": "Tartu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0441": {
+      "parish": "Lääne-Nigula vald",
+      "county": "Lääne maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0442": {
+      "parish": "Lüganuse vald",
+      "county": "Ida-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0446": {
+      "parish": "Maardu linn",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0478": {
+      "parish": "Muhu vald",
+      "county": "Saare maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0480": {
+      "parish": "Mulgi vald",
+      "county": "Viljandi maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0482": {
+      "parish": "Mustamäe linnaosa",
+      "county": "Tallinn",
+      "state": "Eesti Vabariik"
+    },
+    "0486": {
+      "parish": "Mustvee vald",
+      "county": "Jõgeva maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0502": {
+      "parish": "Märjamaa vald",
+      "county": "Rapla maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0511": {
+      "parish": "Narva linn",
+      "county": "Ida-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0515": {
+      "parish": "Narva-Jõesuu linn",
+      "county": "Ida-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0524": {
+      "parish": "Nõmme linnaosa",
+      "county": "Tallinn",
+      "state": "Eesti Vabariik"
+    },
+    "0528": {
+      "parish": "Nõo vald",
+      "county": "Tartu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0557": {
+      "parish": "Otepää vald",
+      "county": "Valga maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0567": {
+      "parish": "Paide linn",
+      "county": "Järva maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0586": {
+      "parish": "Peipsiääre vald",
+      "county": "Tartu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0596": {
+      "parish": "Pirita linnaosa",
+      "county": "Tallinn",
+      "state": "Eesti Vabariik"
+    },
+    "0614": {
+      "parish": "Põhja-Tallinna linnaosa",
+      "county": "Tallinn",
+      "state": "Eesti Vabariik"
+    },
+    "0615": {
+      "parish": "Põhja-Sakala vald",
+      "county": "Viljandi maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0618": {
+      "parish": "Põltsamaa vald",
+      "county": "Jõgeva maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0622": {
+      "parish": "Põlva vald",
+      "county": "Põlva maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0624": {
+      "parish": "Pärnu linn",
+      "county": "Pärnu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0637": {
+      "parish": "Põhja-Pärnumaa vald",
+      "county": "Pärnu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0651": {
+      "parish": "Raasiku vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0653": {
+      "parish": "Rae vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0661": {
+      "parish": "Rakvere vald",
+      "county": "Lääne-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0663": {
+      "parish": "Rakvere linn",
+      "county": "Lääne-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0668": {
+      "parish": "Rapla vald",
+      "county": "Rapla maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0689": {
+      "parish": "Ruhnu vald",
+      "county": "Saare maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0698": {
+      "parish": "Rõuge vald",
+      "county": "Võru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0708": {
+      "parish": "Räpina vald",
+      "county": "Põlva maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0712": {
+      "parish": "Saarde vald",
+      "county": "Pärnu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0714": {
+      "parish": "Saaremaa vald",
+      "county": "Saare maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0719": {
+      "parish": "Saku vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0725": {
+      "parish": "Saue vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0732": {
+      "parish": "Setomaa vald",
+      "county": "Võru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0736": {
+      "parish": "Sillamäe linn",
+      "county": "Ida-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0784": {
+      "parish": "Tallinn",
+      "county": "Tallinn",
+      "state": "Eesti Vabariik"
+    },
+    "0792": {
+      "parish": "Tapa vald",
+      "county": "Lääne-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0793": {
+      "parish": "Tartu linn",
+      "county": "Tartu linn",
+      "state": "Eesti Vabariik"
+    },
+    "0796": {
+      "parish": "Tartu vald",
+      "county": "Tartu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0806": {
+      "parish": "Tori vald",
+      "county": "Pärnu maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0824": {
+      "parish": "Tõrva vald",
+      "county": "Valga maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0834": {
+      "parish": "Türi vald",
+      "county": "Järva maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0857": {
+      "parish": "Valga vald",
+      "county": "Valga maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0890": {
+      "parish": "Viimsi vald",
+      "county": "Harju maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0897": {
+      "parish": "Viljandi linn",
+      "county": "Viljandi maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0899": {
+      "parish": "Viljandi vald",
+      "county": "Viljandi maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0901": {
+      "parish": "Vinni vald",
+      "county": "Lääne-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0903": {
+      "parish": "Viru-Nigula vald",
+      "county": "Lääne-Viru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0907": {
+      "parish": "Vormsi vald",
+      "county": "Lääne maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0917": {
+      "parish": "Võru vald",
+      "county": "Võru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0919": {
+      "parish": "Võru linn",
+      "county": "Võru maakond",
+      "state": "Eesti Vabariik"
+    },
+    "0928": {
+      "parish": "Väike-Maarja vald",
+      "county": "Lääne-Viru maakond",
+      "state": "Eesti Vabariik"
+    }
+  },
+  "districts": {
+    "0130.1": {
+      "name": "Alutaguse vald",
+      "parish": [
+        "0130"
+      ]
+    },
+    "0141.1": {
+      "name": "Anija vald",
+      "parish": [
+        "0141"
+      ]
+    },
+    "0145.1": {
+      "name": "Antsla vald",
+      "parish": [
+        "0145"
+      ]
+    },
+    "0171.1": {
+      "name": "Elva vald",
+      "parish": [
+        "0171"
+      ]
+    },
+    "0176.1": {
+      "name": "Haabersti linnaosa",
+      "parish": [
+        "0176"
+      ]
+    },
+    "0184.1": {
+      "name": "Haapsalu linn",
+      "parish": [
+        "0184"
+      ]
+    },
+    "0191.1": {
+      "name": "Haljala vald",
+      "parish": [
+        "0191"
+      ]
+    },
+    "0198.1": {
+      "name": "Harku vald",
+      "parish": [
+        "0198"
+      ]
+    },
+    "0205.1": {
+      "name": "Hiiumaa vald",
+      "parish": [
+        "0205"
+      ]
+    },
+    "0214.1": {
+      "name": "Häädemeeste vald",
+      "parish": [
+        "0214"
+      ]
+    },
+    "0245.1": {
+      "name": "Jõelähtme vald",
+      "parish": [
+        "0245"
+      ]
+    },
+    "0247.1": {
+      "name": "Jõgeva vald",
+      "parish": [
+        "0247"
+      ]
+    },
+    "0250.1": {
+      "name": "Jõhvi vald (ühinevad Jõhvi vald ja Toila vald)",
+      "parish": [
+        "0250"
+      ]
+    },
+    "0255.1": {
+      "name": "Järva vald",
+      "parish": [
+        "0255"
+      ]
+    },
+    "0272.1": {
+      "name": "Kadrina vald",
+      "parish": [
+        "0272"
+      ]
+    },
+    "0283.1": {
+      "name": "Kambja vald",
+      "parish": [
+        "0283"
+      ]
+    },
+    "0284.1": {
+      "name": "Kanepi vald",
+      "parish": [
+        "0284"
+      ]
+    },
+    "0291.1": {
+      "name": "Kastre vald",
+      "parish": [
+        "0291"
+      ]
+    },
+    "0293.1": {
+      "name": "Kehtna vald",
+      "parish": [
+        "0293"
+      ]
+    },
+    "0296.1": {
+      "name": "Keila linn",
+      "parish": [
+        "0296"
+      ]
+    },
+    "0298.1": {
+      "name": "Kesklinna linnaosa",
+      "parish": [
+        "0298"
+      ]
+    },
+    "0303.1": {
+      "name": "Kihnu vald",
+      "parish": [
+        "0303"
+      ]
+    },
+    "0305.1": {
+      "name": "Kiili vald",
+      "parish": [
+        "0305"
+      ]
+    },
+    "0317.1": {
+      "name": "Kohila vald",
+      "parish": [
+        "0317"
+      ]
+    },
+    "0321.1": {
+      "name": "Kohtla-Järve linn",
+      "parish": [
+        "0321"
+      ]
+    },
+    "0338.1": {
+      "name": "Kose vald",
+      "parish": [
+        "0338"
+      ]
+    },
+    "0339.1": {
+      "name": "Kristiine linnaosa",
+      "parish": [
+        "0339"
+      ]
+    },
+    "0353.1": {
+      "name": "Kuusalu vald",
+      "parish": [
+        "0353"
+      ]
+    },
+    "0387.1": {
+      "name": "Lasnamäe linnaosa",
+      "parish": [
+        "0387"
+      ]
+    },
+    "0424.1": {
+      "name": "Loksa linn",
+      "parish": [
+        "0424"
+      ]
+    },
+    "0430.1": {
+      "name": "Lääneranna vald",
+      "parish": [
+        "0430"
+      ]
+    },
+    "0431.1": {
+      "name": "Lääne-Harju vald",
+      "parish": [
+        "0431"
+      ]
+    },
+    "0432.1": {
+      "name": "Luunja vald",
+      "parish": [
+        "0432"
+      ]
+    },
+    "0441.1": {
+      "name": "Lääne-Nigula vald",
+      "parish": [
+        "0441"
+      ]
+    },
+    "0442.1": {
+      "name": "Lüganuse vald",
+      "parish": [
+        "0442"
+      ]
+    },
+    "0446.1": {
+      "name": "Maardu linn",
+      "parish": [
+        "0446"
+      ]
+    },
+    "0478.1": {
+      "name": "Muhu vald",
+      "parish": [
+        "0478"
+      ]
+    },
+    "0480.1": {
+      "name": "Mulgi vald",
+      "parish": [
+        "0480"
+      ]
+    },
+    "0482.1": {
+      "name": "Mustamäe linnaosa",
+      "parish": [
+        "0482"
+      ]
+    },
+    "0486.1": {
+      "name": "Mustvee vald",
+      "parish": [
+        "0486"
+      ]
+    },
+    "0502.1": {
+      "name": "Märjamaa vald",
+      "parish": [
+        "0502"
+      ]
+    },
+    "0511.1": {
+      "name": "Narva linn",
+      "parish": [
+        "0511"
+      ]
+    },
+    "0515.1": {
+      "name": "Narva-Jõesuu linn",
+      "parish": [
+        "0515"
+      ]
+    },
+    "0524.1": {
+      "name": "Nõmme linnaosa",
+      "parish": [
+        "0524"
+      ]
+    },
+    "0528.1": {
+      "name": "Nõo vald",
+      "parish": [
+        "0528"
+      ]
+    },
+    "0557.1": {
+      "name": "Otepää vald",
+      "parish": [
+        "0557"
+      ]
+    },
+    "0567.1": {
+      "name": "Paide linn",
+      "parish": [
+        "0567"
+      ]
+    },
+    "0586.1": {
+      "name": "Peipsiääre vald",
+      "parish": [
+        "0586"
+      ]
+    },
+    "0596.1": {
+      "name": "Pirita linnaosa",
+      "parish": [
+        "0596"
+      ]
+    },
+    "0614.1": {
+      "name": "Põhja-Tallinna linnaosa",
+      "parish": [
+        "0614"
+      ]
+    },
+    "0615.1": {
+      "name": "Põhja-Sakala vald",
+      "parish": [
+        "0615"
+      ]
+    },
+    "0618.1": {
+      "name": "Põltsamaa vald",
+      "parish": [
+        "0618"
+      ]
+    },
+    "0622.1": {
+      "name": "Põlva vald",
+      "parish": [
+        "0622"
+      ]
+    },
+    "0624.1": {
+      "name": "Pärnu linn",
+      "parish": [
+        "0624"
+      ]
+    },
+    "0637.1": {
+      "name": "Põhja-Pärnumaa vald",
+      "parish": [
+        "0637"
+      ]
+    },
+    "0651.1": {
+      "name": "Raasiku vald",
+      "parish": [
+        "0651"
+      ]
+    },
+    "0653.1": {
+      "name": "Rae vald",
+      "parish": [
+        "0653"
+      ]
+    },
+    "0661.1": {
+      "name": "Rakvere vald",
+      "parish": [
+        "0661"
+      ]
+    },
+    "0663.1": {
+      "name": "Rakvere linn",
+      "parish": [
+        "0663"
+      ]
+    },
+    "0668.1": {
+      "name": "Rapla vald",
+      "parish": [
+        "0668"
+      ]
+    },
+    "0689.1": {
+      "name": "Ruhnu vald",
+      "parish": [
+        "0689"
+      ]
+    },
+    "0698.1": {
+      "name": "Rõuge vald",
+      "parish": [
+        "0698"
+      ]
+    },
+    "0708.1": {
+      "name": "Räpina vald",
+      "parish": [
+        "0708"
+      ]
+    },
+    "0712.1": {
+      "name": "Saarde vald",
+      "parish": [
+        "0712"
+      ]
+    },
+    "0714.1": {
+      "name": "Saaremaa vald",
+      "parish": [
+        "0714"
+      ]
+    },
+    "0719.1": {
+      "name": "Saku vald",
+      "parish": [
+        "0719"
+      ]
+    },
+    "0725.1": {
+      "name": "Saue vald",
+      "parish": [
+        "0725"
+      ]
+    },
+    "0732.1": {
+      "name": "Setomaa vald",
+      "parish": [
+        "0732"
+      ]
+    },
+    "0736.1": {
+      "name": "Sillamäe linn",
+      "parish": [
+        "0736"
+      ]
+    },
+    "0784.1": {
+      "name": "Tallinn",
+      "parish": [
+        "0784"
+      ]
+    },
+    "0792.1": {
+      "name": "Tapa vald",
+      "parish": [
+        "0792"
+      ]
+    },
+    "0793.1": {
+      "name": "Tartu linn",
+      "parish": [
+        "0793"
+      ]
+    },
+    "0796.1": {
+      "name": "Tartu vald",
+      "parish": [
+        "0796"
+      ]
+    },
+    "0806.1": {
+      "name": "Tori vald",
+      "parish": [
+        "0806"
+      ]
+    },
+    "0824.1": {
+      "name": "Tõrva vald",
+      "parish": [
+        "0824"
+      ]
+    },
+    "0834.1": {
+      "name": "Türi vald",
+      "parish": [
+        "0834"
+      ]
+    },
+    "0857.1": {
+      "name": "Valga vald",
+      "parish": [
+        "0857"
+      ]
+    },
+    "0890.1": {
+      "name": "Viimsi vald",
+      "parish": [
+        "0890"
+      ]
+    },
+    "0897.1": {
+      "name": "Viljandi linn",
+      "parish": [
+        "0897"
+      ]
+    },
+    "0899.1": {
+      "name": "Viljandi vald",
+      "parish": [
+        "0899"
+      ]
+    },
+    "0901.1": {
+      "name": "Vinni vald",
+      "parish": [
+        "0901"
+      ]
+    },
+    "0903.1": {
+      "name": "Viru-Nigula vald",
+      "parish": [
+        "0903"
+      ]
+    },
+    "0907.1": {
+      "name": "Vormsi vald",
+      "parish": [
+        "0907"
+      ]
+    },
+    "0917.1": {
+      "name": "Võru vald",
+      "parish": [
+        "0917"
+      ]
+    },
+    "0919.1": {
+      "name": "Võru linn",
+      "parish": [
+        "0919"
+      ]
+    },
+    "0928.1": {
+      "name": "Väike-Maarja vald",
+      "parish": [
+        "0928"
+      ]
+    }
+  },
+  "counties": {
+    "0037": [
+      "0141",
+      "0198",
+      "0245",
+      "0296",
+      "0305",
+      "0338",
+      "0353",
+      "0424",
+      "0431",
+      "0446",
+      "0651",
+      "0653",
+      "0719",
+      "0725",
+      "0890"
+    ],
+    "0039": [
+      "0205"
+    ],
+    "0045": [
+      "0130",
+      "0250",
+      "0321",
+      "0442",
+      "0511",
+      "0515",
+      "0736"
+    ],
+    "0050": [
+      "0247",
+      "0486",
+      "0618"
+    ],
+    "0052": [
+      "0255",
+      "0567",
+      "0834"
+    ],
+    "0056": [
+      "0184",
+      "0441",
+      "0907"
+    ],
+    "0060": [
+      "0191",
+      "0272",
+      "0661",
+      "0663",
+      "0792",
+      "0901",
+      "0903",
+      "0928"
+    ],
+    "0064": [
+      "0284",
+      "0622",
+      "0708"
+    ],
+    "0068": [
+      "0214",
+      "0303",
+      "0430",
+      "0624",
+      "0637",
+      "0712",
+      "0806"
+    ],
+    "0071": [
+      "0293",
+      "0317",
+      "0502",
+      "0668"
+    ],
+    "0074": [
+      "0478",
+      "0689",
+      "0714"
+    ],
+    "0079": [
+      "0171",
+      "0283",
+      "0291",
+      "0432",
+      "0528",
+      "0586",
+      "0796"
+    ],
+    "0081": [
+      "0557",
+      "0824",
+      "0857"
+    ],
+    "0084": [
+      "0480",
+      "0615",
+      "0897",
+      "0899"
+    ],
+    "0087": [
+      "0145",
+      "0698",
+      "0732",
+      "0917",
+      "0919"
+    ],
+    "0784": [
+      "0176",
+      "0298",
+      "0339",
+      "0387",
+      "0482",
+      "0524",
+      "0596",
+      "0614",
+      "0784"
+    ],
+    "0793": [
+      "0793"
+    ]
+  }
+}
