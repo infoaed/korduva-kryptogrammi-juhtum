@@ -4,7 +4,7 @@ Mis juhtus e-häälte auditeerimisel 2025. aasta KOV valimistel? Audiitori 20.10
 
 Esialgse kokkuvõtte toimunust leiab [3.11.2025 blogipostitusest](https://gafgaf.infoaed.ee/posts/korduva-kryptogrammi-juhtum/), mille kohta on ka [kokkuvõttev video](https://youtu.be/clmqgo9b6dY).
 
-Tegu on osalise korduslugemisega tegelike KOV valimistel antud häältega, mille valijad salvestasid hääletusprotsessi käigus. Vaidlusi põhjustasid _korduvad krüptogrammid_, mida audiitori raporti väitel oli viis ja mida audiitor oma raportis ekslikult samastab töötlemisrakenduse tuvastataud viie mitte-unikaalse registreerimisteenuse päringu andnud häälekonteineriga:
+Siinne andmekogu on 2025. aasta KOV valimiste elektroonilise hääletuse osaline korduslugemine tegelike KOV valimistel antud häältega, mille valijad salvestasid hääletusprotsessi käigus. Vaidlusi põhjustasid _korduvad krüptogrammid_, mida audiitori raporti väitel oli viis ja mida audiitor oma raportis ekslikult samastab töötlemisrakenduse tuvastataud viie mitte-unikaalse registreerimisteenuse päringu andnud häälekonteineriga:
 
 ```
 E-valimiskasti laadimine failist 'conf/../votes.zip'
@@ -64,7 +64,7 @@ Korduslugemine annab tulemuseks, et korduvaid krüptogramme oli valimiskastis v�
 1. Kuus identset häälekonteinerit, mis sisaldavad ka identseid krüptogramme, millest häiret anti _viie viimase puhul_;
 2. Seitse unikaalset häälekonteinerit, millest viis sisaldasid ühte identset krüptogrammi ja kaks teist identset krüptogrammi, millest kummagi puhul anti häiret viimaste puhul, st 5-1 = 4 ja 2-1 = 1 ehk kokku samuti _viie korduva krüptogrammi puhul_.
 
-Audiitor küll märgib korrektselt, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`", kuid samastab ekslikult need identsete häälekonteinerite kohta antud teated korduvate krüptogrammide kohta antud teavitusega, mida oli samuti viis. Siiski puudub _viiel identsel häälekonteineril_ ja _viiel korduval krüptogrammil_ omavaheline seos töötemis- või auditirakenduse kontekstis ja tegu on täiesti isoleeritud juhtumitega.
+Audiitor küll märgib korrektselt, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`", kuid samastab ekslikult need identsete häälekonteinerite kohta antud teated korduvate krüptogrammide kohta antud teavitusega. Siiski puudub _viiel identsel häälekonteineril_ ja _viiel korduval krüptogrammil_ omavaheline seos töötemis- või auditirakenduse kontekstis ja tegu on täiesti isoleeritud juhtumitega.
 
 Seejuures käivad määrangud `present in both the acceptance and rejection logs` ja `not found in the acceptance/rejection logs` viie töötlusfaasis tuvastatud identse häälekonteineri kohta ja `there are 5 ciphertext recurrences among the accepted ballots` viie auditirakenduse jooksutamise käigus ilmnenud korduva krüptogrammi kohta.
 
@@ -89,6 +89,8 @@ Audiitori poolt väidetud korduvate krüptogrammide töötlemisega mitte arvesta
 Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, kus sama auditirakenduse kood samuti kasutusel oli.
 
 Kuna audiitor toimingute raames luges kokku rohkem kui kümme korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega ning ei anna adekvaatset hinnangut intsidendi põhjustele, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
+
+Kuna valijad isikukoodi lõpuga `2724` ja `4710` ei salvestanud katsetamise käigus kõiki oma häälekonteinereid, siis on toimunu kirjelduse klapitamisel [audiitori 20.10.2025 avalike toimingute](https://youtu.be/c9LAOCCr3UQ?t=8570) raames väljendatuga eeldatud, et krüptogrammi `9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ=` sisaldavaid häälekonteinereid oli kahe võrra rohkem, st säilinud kolme konteineri asemel viis.
 
 Kui tahad ise sammud läbi teha, siis:
 
