@@ -62,9 +62,9 @@ Auditirakendus lõpetas töö ilma vigadeta
 Korduslugemine annab tulemuseks, et korduvaid krüptogramme oli valimiskastis vähemalt 13, mille hulgas olid:
 
 1. Kuus identset häälekonteinerit, mis sisaldavad ka identseid krüptogramme, millest häiret anti _viie viimase puhul_;
-2. Seitse unikaalset häälekonteinerit, millest viis[^2] sisaldasid ühte identset krüptogrammi ja kaks sisaldasid teist identset krüptogrammi, millest kummagi puhul anti häiret viimaste puhul, st 5-1 = 4 ja 2-1 = 1 ehk kokku samuti _viie korduva krüptogrammi puhul_.
+2. Seitse unikaalset häälekonteinerit, millest viis[^2] sisaldasid kõik ühte krüptogrammi ja kaks sisaldasid teist krüptogrammi, millest kummagi puhul anti häiret viimaste puhul, st 5−1 = 4 ja 2−1 = 1 ehk kokku samuti _viie korduva krüptogrammi puhul_.
 
-Audiitor küll märgib korrektselt, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`", kuid samastab ekslikult need identsete häälekonteinerite kohta antud teated korduvate krüptogrammide kohta antud teavitusega. Siiski puudub _viiel identsel häälekonteineril_ ja _viiel korduval krüptogrammil_ omavaheline seos töötemis- või auditirakenduse kontekstis ja tegu on täiesti isoleeritud juhtumitega.
+Audiitor küll märgib korrektselt, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`", kuid samastab ekslikult need identsete häälekonteinerite kohta antud teated korduvate krüptogrammide kohta antud teavitusega. Siiski puudub _viiel identsel häälekonteineril_ ja _viiel korduval krüptogrammil_ omavaheline seos töötlemis- või auditirakenduse kontekstis ja tegu on täiesti isoleeritud juhtumitega.
 
 Seejuures käivad määrangud "on olemas nii vastuvõetud kui tagasilükatud häälte logis" ja "pole ei vastuvõetud ega tagasilükatud häälte logides" viie töötlusfaasis tuvastatud identse häälekonteineri kohta ja "vastuvõetud häälte hulgas on viis korduvat šifriteksti" auditirakenduse jooksutamise käigus ilmnenud viie korduva krüptogrammi kohta.
 
