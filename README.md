@@ -1,10 +1,10 @@
-# korduva-kryptogrammi-juhtum
+# Korduva krüptogrammi juhtum
 
-Mis juhtus e-häälte auditeerimisel 2025. aasta KOV valimistel? Audiitori 20.10.2025 toimingu käigus leidis aset segadus, mille asjaolud vaikib audiitor maha ka [oma 22.12.2025 lõpparuandes](https://www.valimised.ee/sites/default/files/2025-12/L%C3%B5pparuanne%20KOV2025%20e-h%C3%A4%C3%A4letuse%20audit%2022.12%201.asice).
+Mis juhtus e-häälte auditeerimisel 2025. aasta KOV valimistel? Audiitori 20.10.2025 toimingu käigus leidis aset segadus, mille asjaolud vaikib audiitor maha ka [oma 22.12.2025 lõpparuandes](https://www.valimised.ee/sites/default/files/2025-12/L%C3%B5pparuanne%20KOV2025%20e-h%C3%A4%C3%A4letuse%20audit%2022.12%201.asice). Esialgse kokkuvõtte toimunust leiab [3.11.2025 blogipostitusest](https://gafgaf.infoaed.ee/posts/korduva-kryptogrammi-juhtum/), mille kohta on ka [kokkuvõttev video](https://youtu.be/clmqgo9b6dY).
 
-Esialgse kokkuvõtte toimunust leiab [3.11.2025 blogipostitusest](https://gafgaf.infoaed.ee/posts/korduva-kryptogrammi-juhtum/), mille kohta on ka [kokkuvõttev video](https://youtu.be/clmqgo9b6dY).
+## Andmelugu korduvatest krüptogrammidest
 
-Siinne andmekogu on 2025. aasta KOV valimiste elektroonilise hääletuse osaline korduslugemine tegelike KOV valimistel antud häältega, mille valijad salvestasid hääletusprotsessi käigus. Vaidlusi põhjustasid _korduvad krüptogrammid_, mida audiitori raporti väitel oli viis ja mida audiitor oma raportis ekslikult samastab töötlemisrakenduse tuvastataud viie mitte-unikaalse häälekonteineriga:
+Siinne andmehulk[^1] on 2025. aasta KOV valimiste elektroonilise hääletuse osaline korduslugemine tegelike KOV valimistel antud häältega, mille valijad salvestasid hääletusprotsessi käigus. Vaidlusi põhjustasid _korduvad krüptogrammid_, mida audiitori raporti väitel oli viis ja mida audiitor oma raportis ekslikult samastab töötlemisrakenduse tuvastataud viie mitte-unikaalse häälekonteineriga:
 
 ```
 E-valimiskasti laadimine failist 'conf/../votes.zip'
@@ -62,15 +62,15 @@ Auditirakendus lõpetas töö ilma vigadeta
 Korduslugemine annab tulemuseks, et korduvaid krüptogramme oli valimiskastis vähemalt 13, mille hulgas olid:
 
 1. Kuus identset häälekonteinerit, mis sisaldavad ka identseid krüptogramme, millest häiret anti _viie viimase puhul_;
-2. Seitse unikaalset häälekonteinerit, millest viis sisaldasid ühte identset krüptogrammi ja kaks teist identset krüptogrammi, millest kummagi puhul anti häiret viimaste puhul, st 5-1 = 4 ja 2-1 = 1 ehk kokku samuti _viie korduva krüptogrammi puhul_.
+2. Seitse unikaalset häälekonteinerit[^2], millest viis sisaldasid ühte identset krüptogrammi ja kaks teist identset krüptogrammi, millest kummagi puhul anti häiret viimaste puhul, st 5-1 = 4 ja 2-1 = 1 ehk kokku samuti _viie korduva krüptogrammi puhul_.
 
 Audiitor küll märgib korrektselt, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`", kuid samastab ekslikult need identsete häälekonteinerite kohta antud teated korduvate krüptogrammide kohta antud teavitusega. Siiski puudub _viiel identsel häälekonteineril_ ja _viiel korduval krüptogrammil_ omavaheline seos töötemis- või auditirakenduse kontekstis ja tegu on täiesti isoleeritud juhtumitega.
 
-Seejuures käivad määrangud `present in both the acceptance and rejection logs` ja `not found in the acceptance/rejection logs` viie töötlusfaasis tuvastatud identse häälekonteineri kohta ja `there are 5 ciphertext recurrences among the accepted ballots` viie auditirakenduse jooksutamise käigus ilmnenud korduva krüptogrammi kohta.
+Seejuures käivad määrangud "on olemas nii vastuvõetud kui tagasilükatud häälte logis" ja "pole ei vastuvõetud ega tagasilükatud häälte logides" viie töötlusfaasis tuvastatud identse häälekonteineri kohta ja "vastuvõetud häälte hulgas on viis korduvat šifriteksti" auditirakenduse jooksutamise käigus ilmnenud viie korduva krüptogrammi kohta.
 
 Seetõttu on vale audiitori väide, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`" ja "vea andis audiitorrakendus, kuna selle algoritm ei sisalda kasutusjuhtu, kui isetehtud valijarakendusega saadetakse kogujasse üks ja sama krüptogramm korduvalt".
 
-Auditirakenduse eksplitsiitselt arvestas nii korduvate krüptogrammide kui identsete häälekonteineritega, mille kohta võib leida märkuse [lähtekoodi kommentaaridest](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L239-L243):
+Auditirakenduse eksplitsiitselt arvestas nii korduvate krüptogrammide kui identsete häälekonteineritega, mille kohta leiab märkuse [lähtekoodi kommentaaridest](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L239-L243):
 
 ```
 // We must use a bag instead of a set since it might happen (statistically unlikely unless intentional)
@@ -78,19 +78,21 @@ Auditirakenduse eksplitsiitselt arvestas nii korduvate krüptogrammide kui ident
 // state of the accepted ballots.
 ```
 
-Ka auditirakenduse tegelikul jooksutamisel arvestas algoritm korrektselt just nimelt korduvate krüptogrammidega: viie korduva krüptogrammi olemasolu valimiskastis ega selle kohta antud teade auditirakenduse käitamisel probleeme ei tekitanud.
+Ka auditirakenduse tegelikul jooksutamisel arvestas algoritm korrektselt just nimelt korduvate krüptogrammidega ja viie korduva krüptogrammi olemasolu valimiskastis ega selle kohta antud teade auditirakenduse käitamisel probleeme ei tekitanud.
 
 Küll aga tekitas probleeme identsete häälekonteinerite töötlemisel auditirakenduses esinev programmeerimisviga, mille raames ühildati valesti funktsiooni `getValidInvalidSums` parameetritena edasi antud `set` ja `list` andmetüüpe.
 
 Selle tõttu eemaldati [IngegrityTooli ridadel 268-278](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L268-L278) esimese identse häälekonteinerini jõudes ühekorraga kõik identsed häälekonteinerid, mille tõttu esimesel läbimisel kuvati teadet `present in both the acceptance and rejection logs` ja teisel läbimisel `not found in the acceptance/rejection logs`, sest konteineri räsi enam massiivist ei leitud.
 
-Audiitori poolt väidetud korduvate krüptogrammide töötlemisega mitte arvestamine algoritmi tasemel oli hoopis lihtne identsete häälekonteinerite töötlemise programmeerimisviga, mis oli jäänud koodi sisse sõltumata sellest, et programmeerija oli endale kirjutanud eraldi märkuse sellest veast hoidumise vajaduse kohta.
+Selle tarkvaravea tagajärjel kuvas auditirakendus poleemikat tekitanud teadet 'E-valimiskasti verifitseerimise logid on terviklikud: ei`, mille kohta audiitori esindaja avalike toimingute käigus ütles, et see on "tegelikult päris paha lause".
 
-Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, kus sama auditirakenduse kood samuti kasutusel oli.
+Audiitori poolt väidetud korduvate krüptogrammide töötlemisega mitte arvestamine algoritmi tasemel oli hoopis identsete häälekonteinerite töötlemise programmeerimisviga, mis oli jäänud koodi sisse vaatamata sellele, et programmeerija oli endale kirjutanud eraldi märkuse sellest veast hoidumise vajaduse kohta.
+
+Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, kus sama auditirakenduse kood esimest korda kasutusel oli.
 
 Kuna audiitor toimingute raames luges kokku rohkem kui kümme korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega ning ei anna adekvaatset hinnangut intsidendi põhjustele, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
 
-Kuna valijad isikukoodi lõpuga `2724` ja `4710` ei salvestanud katsetamise käigus kõiki oma häälekonteinereid, siis on toimunu kirjelduse klapitamisel [audiitori 20.10.2025 avalike toimingute](https://youtu.be/c9LAOCCr3UQ?t=8570) raames väljendatuga eeldatud, et krüptogrammi `9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ=` sisaldavaid häälekonteinereid oli kahe võrra rohkem, st säilinud kolme konteineri asemel viis.
+## Andmehulga kasutamise juhis
 
 Kui tahad ise sammud läbi teha, siis:
 
@@ -126,4 +128,6 @@ make auditor
 cd ..
 ```
 
-Peale siin failis oleva andmeloo inimkeelse kirjelduse on kogu varamu sisu [avalikuks kasutuseks CC0 alusel](https://creativecommons.org/publicdomain/zero/1.0/deed.et). Andmeloo autor on Märt Põder ja seda võib levitada [CC BY tingimustel autorit viidates](https://creativecommons.org/licenses/by/4.0/deed.et).
+[^1]: Peale siin failis oleva andmeloo inimkeelse kirjelduse on kogu varamu sisu [avalikuks kasutuseks CC0 alusel](https://creativecommons.org/publicdomain/zero/1.0/deed.et). Andmeloo autor on Märt Põder ja seda võib levitada [CC BY tingimustel autorit viidates](https://creativecommons.org/licenses/by/4.0/deed.et).
+
+[^2]: Kuna valijad isikukoodi lõpuga `2724` ja `4710` ei salvestanud katsetamise käigus kõiki oma häälekonteinereid, siis on toimunu kirjelduse klapitamisel [audiitori 20.10.2025 avalike toimingute](https://youtu.be/c9LAOCCr3UQ?t=8570) raames väljendatuga eeldatud, et krüptogrammi `9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ=` sisaldavaid häälekonteinereid oli kahe võrra rohkem, st säilinud kolme konteineri asemel viis.
