@@ -59,12 +59,12 @@ E-valimiskasti verifitseerimise logid on terviklikud: ei
 Auditirakendus lõpetas töö ilma vigadeta
 ```
 
-Korduslugemine annab tulemuseks, et korduvaid krüptogramme oli valimiskastis vähemalt 13, mille hulgas olid:
+Korduslugemine annab tulemuseks, et korduvaid krüptogramme oli valimiskastis vähemalt 11, aga audiitori ja valimiste korraldaja avalike toimingute käigus antud ütluste kohaselt kokku 13, mille hulgas olid:
 
 1. Kuus identset häälekonteinerit, mis sisaldavad ka identseid krüptogramme, millest häiret anti _viie viimase puhul_;
-2. Seitse unikaalset häälekonteinerit, millest viis[^2] sisaldasid kõik ühte krüptogrammi ja kaks sisaldasid teist krüptogrammi, millest kummagi puhul anti häiret viimaste puhul, st 5−1 = 4 ja 2−1 = 1 ehk kokku samuti _viie korduva krüptogrammi puhul_.
+2. Seitse unikaalset häälekonteinerit, millest viis[^2] sisaldasid kõik ühte korduvat krüptogrammi ja kaks sisaldasid teist korduvat krüptogrammi, millest kummagi puhul anti häiret viimaste puhul, st 5−1 = 4 ja 2−1 = 1 ehk kokku samuti _viie korduva krüptogrammi puhul_.
 
-Audiitor küll märgib korrektselt, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`", kuid samastab ekslikult need identsete häälekonteinerite kohta antud teated korduvate krüptogrammide kohta antud teavitusega. Siiski puudub _viiel identsel häälekonteineril_ ja _viiel korduval krüptogrammil_ omavaheline seos töötlemis- või auditirakenduse kontekstis ja tegu on täiesti isoleeritud juhtumitega.
+Audiitor küll märgib korrektselt, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`", kuid samastab ekslikult identsete häälekonteinerite kohta antud teated hiljem korduvate krüptogrammide kohta antud teavitusega `5 ciphertext recurrences`. Siiski puudub _viiel identsel häälekonteineril_ ja _viiel korduval krüptogrammil_ omavaheline seos töötlemis- või auditirakenduse kontekstis ja tegu on täiesti isoleeritud juhtumitega.
 
 Seejuures käivad määrangud "on olemas nii vastuvõetud kui tagasilükatud häälte logis" ja "pole ei vastuvõetud ega tagasilükatud häälte logides" viie töötlusfaasis tuvastatud identse häälekonteineri kohta ja "vastuvõetud häälte hulgas on viis korduvat šifriteksti" auditirakenduse jooksutamise käigus ilmnenud viie korduva krüptogrammi kohta.
 
@@ -86,11 +86,11 @@ Selle tõttu eemaldati [IngegrityTooli ridadel 268-278](https://github.com/valim
 
 Selle tarkvaravea tagajärjel kuvas auditirakendus poleemikat tekitanud teadet 'E-valimiskasti verifitseerimise logid on terviklikud: ei`, mille kohta audiitori esindaja avalike toimingute käigus ütles, et see on "tegelikult päris paha lause".
 
-Audiitori poolt väidetud korduvate krüptogrammide töötlemisega mitte arvestamine algoritmi tasemel oli hoopis identsete häälekonteinerite töötlemise programmeerimisviga, mis oli jäänud koodi sisse vaatamata sellele, et programmeerija oli endale kirjutanud eraldi märkuse sellest veast hoidumise vajaduse kohta.
+Audiitori poolt väidetud korduvate krüptogrammide töötlemisega mitte arvestamine algoritmi tasemel oli hoopis identsete häälekonteinerite töötlemise programmeerimisviga, mis oli jäänud koodi sisse vaatamata sellele, et programmeerija oli endale kirjutanud lähtekoodi eraldi märkuse sellest veast hoidumise vajaduse kohta.
 
 Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, kus sama auditirakenduse kood esimest korda kasutusel oli.
 
-Kuna audiitor toimingute raames luges kokku rohkem kui kümme korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega ning ei anna adekvaatset hinnangut intsidendi põhjustele, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
+Kuna audiitor avalike toimingute raames luges kokku kümmekond korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega ning ei anna adekvaatset hinnangut intsidendi põhjustele, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
 
 ## Andmehulga kasutamise juhis
 
