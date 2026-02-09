@@ -70,7 +70,7 @@ Seejuures käivad määrangud `present in both the acceptance and rejection logs
 
 Seetõttu on vale audiitori väide, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`" ja "vea andis audiitorrakendus, kuna selle algoritm ei sisalda kasutusjuhtu, kui isetehtud valijarakendusega saadetakse kogujasse üks ja sama krüptogramm korduvalt".
 
-Tegelikkuses audiitorrakendus eksplitsiitselt arvestas nii korduvate krüptogrammide kui identsete häälekonteineritega, mille kohta võib leida märkuse [lähtekoodi kommentaaridest](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L239-L243):
+Auditirakenduse eksplitsiitselt arvestas nii korduvate krüptogrammide kui identsete häälekonteineritega, mille kohta võib leida märkuse [lähtekoodi kommentaaridest](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L239-L243):
 
 ```
 // We must use a bag instead of a set since it might happen (statistically unlikely unless intentional)
@@ -78,15 +78,17 @@ Tegelikkuses audiitorrakendus eksplitsiitselt arvestas nii korduvate krüptogram
 // state of the accepted ballots.
 ```
 
-Tegelikkuses algoritm arvestas just nimelt korduvate krüptogrammidega ja viie korduva krüptogrammi olemasolu valimiskastis ega selle kohta antud teade töötlemisrakenduse või auditirakenduse käitamisel probleeme ei tekitanud.
+Ka auditirakenduse tegelikul jooksutamisel arvestas algoritm korrektselt just nimelt korduvate krüptogrammidega: viie korduva krüptogrammi olemasolu valimiskastis ega selle kohta antud teade auditirakenduse käitamisel probleeme ei tekitanud.
 
 Küll aga tekitas probleeme identsete häälekonteinerite töötlemisel auditirakenduses esinev programmeerimisviga, mille raames ühildati valesti funktsiooni `getValidInvalidSums` parameetritena edasi antud `set` ja `list` andmetüüpe.
 
 Selle tõttu eemaldati [IngegrityTooli ridadel 268-278](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L268-L278) esimese identse häälekonteinerini jõudes ühekorraga kõik identsed häälekonteinerid, mille tõttu esimesel läbimisel kuvati teadet `present in both the acceptance and rejection logs` ja teisel läbimisel `not found in the acceptance/rejection logs`, sest konteineri räsi enam massiivist ei leitud.
 
-Audiitori poolt väidetud korduvate krüptogrammide töötlemisega mitte arvestamine algoritmi tasemel oli hoopis lihtne identsete häälekonteinerite töötlemise programmeerimisviga, mis oli lipsanud koodi sisse sõltumata sellest, et programmeerija oli erndale kirjutanud eraldi märkuse sellest veast hoidumise vajaduse kohta.
+Audiitori poolt väidetud korduvate krüptogrammide töötlemisega mitte arvestamine algoritmi tasemel oli hoopis lihtne identsete häälekonteinerite töötlemise programmeerimisviga, mis oli jäänud koodi sisse sõltumata sellest, et programmeerija oli endale kirjutanud eraldi märkuse sellest veast hoidumise vajaduse kohta.
 
-Kuna audiitor toimingute raames luges kokku rohkem kui kümme korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
+Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, kus sama auditirakenduse kood samuti kasutusel oli.
+
+Kuna audiitor toimingute raames luges kokku rohkem kui kümme korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega ning ei anna adekvaatset hinnangut intsidendi põhjustele, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
 
 Kui tahad ise sammud läbi teha, siis:
 
