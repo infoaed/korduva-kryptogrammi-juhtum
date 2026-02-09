@@ -123,3 +123,5 @@ make auditor
 
 cd ..
 ```
+
+Peale siin failis oleva andmeloo inimkeelse kirjelduse on kogu varamu sisu [avalikuks kasutuseks CC0 alusel](https://creativecommons.org/publicdomain/zero/1.0/deed.et). Andmeloo autor on Märt Põder ja seda võib levitada [CC BY tingimustel autorit viidates](https://creativecommons.org/licenses/by/4.0/deed.et).
