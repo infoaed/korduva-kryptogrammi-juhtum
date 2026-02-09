@@ -1,23 +1,23 @@
 checkAndSquash:
-  ballotbox: votes.zip
-  ballotbox_checksum: votes.zip.sha256sum.asice
-  districts: conf/districts.asice
+  ballotbox: ../votes.zip
+  ballotbox_checksum: ../votes.zip.sha256sum.asice
+  districts: districts.asice
   #registrationlist: registration.zip
   #registrationlist_checksum: registration.zip.sha256sum.asice
-  tskey: conf/ts.pem
-  vlkey: conf/vl_pub.pem
+  tskey: ts.pem
+  vlkey: vl_pub.pem
   voterlists:
-    - path: conf/voterlist.txt
-      signature: conf/voterlist.txt.signature
+    - path: voterlist.txt
+      signature: voterlist.txt.signature
   election_start: 2025-10-13T06:00:00+03:00
-  enckey: conf/enc_pub.pem
+  enckey: enc_pub.pem
   #ballotbox_checksum: out-1/KOV_2025-bb-1.json.sha256sum.asice
-  out: out-2
+  out: ../out-2
 
 revokeAndAnonymize:
-  ballotbox: out-2/KOV_2025-bb-2.json
-  ballotbox_checksum: out-2/KOV_2025-bb-2.json.sha256sum.asice
-  districts: conf/districts.asice
+  ballotbox: ../out-2/KOV_2025-bb-2.json
+  ballotbox_checksum: ../out-2/KOV_2025-bb-2.json.sha256sum.asice
+  districts: districts.asice
   revocationlists:
 #   - tuhistusnimekiri.asice
-  out: out-4
+  out: ../out-4
