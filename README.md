@@ -4,7 +4,7 @@ Mis juhtus e-häälte auditeerimisel 2025. aasta KOV valimistel? Audiitori 20.10
 
 Esialgse kokkuvõtte toimunust leiab [3.11.2025 blogipostitusest](https://gafgaf.infoaed.ee/posts/korduva-kryptogrammi-juhtum/), mille kohta on ka [kokkuvõttev video](https://youtu.be/clmqgo9b6dY).
 
-Tegu on osalise korduslugemisega tegelike KOV valimistel antud häältega, mille valijad salvestasid hääletusprotsessi käigus. Vaidlusi põhjustasid _korduvad krüptogrammid_, mida audiitori raporti väitel oli viis. ja mida audiitor oma raportis ekslikult samastab töötlemisrakenduse tuvastataud valija isikukoodi lõpuga `2724` viie mitte-unikaalse registreerimisteenuse päringu andnud häälekonteineriga:
+Tegu on osalise korduslugemisega tegelike KOV valimistel antud häältega, mille valijad salvestasid hääletusprotsessi käigus. Vaidlusi põhjustasid _korduvad krüptogrammid_, mida audiitori raporti väitel oli viis ja mida audiitor oma raportis ekslikult samastab töötlemisrakenduse tuvastataud viie mitte-unikaalse registreerimisteenuse päringu andnud häälekonteineriga:
 
 ```
 E-valimiskasti laadimine failist 'conf/../votes.zip'
@@ -30,7 +30,7 @@ E-valimiskastis sisalduvate korrektse allkirjaga häälte arv: 9
 E-valimiskastis sisalduvate vigase allkirjaga häälte arv: 5
 ```
 
-Kuna hiljem kuvas auditirakendus audiitorile teadet viiest korduvast krüptogrammist, siis audiitor paistab olevat need ekslikult samastanud:
+Kuna hiljem kuvas auditirakendus audiitorile teadet viiest korduvast krüptogrammist, siis audiitor paistab olevat viis identset häälekonteinerit ja viis korduvat krüptogrammi ekslikult samastanud:
 
 ```
 E-valimiskasti laadimine failist 'conf/../votes.zip'
