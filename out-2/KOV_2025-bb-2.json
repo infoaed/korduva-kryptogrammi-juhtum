@@ -2,29 +2,29 @@
   "election" : "KOV_2025",
   "type" : "INVALID_CIPHERTEXTS_REMOVED",
   "ballots" : {
-    "47608082724" : {
-      "voterId" : "47608082724",
-      "ballots" : [ {
-        "id" : "20251018140346528+0300",
-        "time" : "2025-10-18T14:04:15Z",
-        "version" : "0",
-        "name" : "SIRET MULDMA",
-        "districtId" : "0171.1",
-        "parish" : "0171",
-        "votes" : {
-          "KOV_2025.question-KOV_2025" : "MIHWMAsGCSsGAQQBho0fATCBxgRhBErGDRc6mj0O8+1Ars6JDrKvA1AeoJVn5o0bomZePS+AGKS+tEQxYvvr+9SccT+2709U1S2GpDVFsr5V8Yhnc7GV7tUSzHb6DzJ9jnLra40Fm1XoCpsILWvW/3Lva/BFyQRhBBXVx729bbdOvKbTG25GTYlONEbLraEk7kzvD1BdxzMsyaLq5edswaWT+46/3aqLTuww8KDM79U4QHEXJR/w+ZbZVReaVpearWewO5rX87HltXphzUgKTliMtWO1DanfGw=="
-        }
-      } ]
-    },
     "38106104710" : {
       "voterId" : "38106104710",
       "ballots" : [ {
-        "id" : "20251018141205963+0300",
+        "id" : "20251018141205000+0300",
         "time" : "2025-10-18T14:12:15Z",
         "version" : "0",
         "name" : "KASPAR KARTANAS",
         "districtId" : "0430.1",
         "parish" : "0430",
+        "votes" : {
+          "KOV_2025.question-KOV_2025" : "MIHWMAsGCSsGAQQBho0fATCBxgRhBErGDRc6mj0O8+1Ars6JDrKvA1AeoJVn5o0bomZePS+AGKS+tEQxYvvr+9SccT+2709U1S2GpDVFsr5V8Yhnc7GV7tUSzHb6DzJ9jnLra40Fm1XoCpsILWvW/3Lva/BFyQRhBBXVx729bbdOvKbTG25GTYlONEbLraEk7kzvD1BdxzMsyaLq5edswaWT+46/3aqLTuww8KDM79U4QHEXJR/w+ZbZVReaVpearWewO5rX87HltXphzUgKTliMtWO1DanfGw=="
+        }
+      } ]
+    },
+    "47608082724" : {
+      "voterId" : "47608082724",
+      "ballots" : [ {
+        "id" : "20251018140346000+0300",
+        "time" : "2025-10-18T14:04:15Z",
+        "version" : "0",
+        "name" : "SIRET MULDMA",
+        "districtId" : "0171.1",
+        "parish" : "0171",
         "votes" : {
           "KOV_2025.question-KOV_2025" : "MIHWMAsGCSsGAQQBho0fATCBxgRhBErGDRc6mj0O8+1Ars6JDrKvA1AeoJVn5o0bomZePS+AGKS+tEQxYvvr+9SccT+2709U1S2GpDVFsr5V8Yhnc7GV7tUSzHb6DzJ9jnLra40Fm1XoCpsILWvW/3Lva/BFyQRhBBXVx729bbdOvKbTG25GTYlONEbLraEk7kzvD1BdxzMsyaLq5edswaWT+46/3aqLTuww8KDM79U4QHEXJR/w+ZbZVReaVpearWewO5rX87HltXphzUgKTliMtWO1DanfGw=="
         }

@@ -1,5 +1,5 @@
-47608082724/20251015055435366+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435366+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
-47608082724/20251015055435407+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435407+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
-47608082724/20251015055435718+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435718+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
-47608082724/20251015055435724+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435724+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
-47608082724/20251015055435766+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251015055435766+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+47608082724/20251017180545119+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251017180545119+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+47608082724/20251017192635906+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251017192635906+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+47608082724/20251017194516845+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251017194516845+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+47608082724/20251018085952944+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251018085952944+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+47608082724/20251018091730762+0300	REG_RESP_NOT_UNIQUE	Viga valija 47608082724 hääle 20251018091730762+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
