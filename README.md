@@ -121,7 +121,7 @@ unzip gradle-8.11-bin.zip -d ivxv/common/external
 rm gradle-8.11-bin.zip
 
 cd ivxv
-common/external/gradle-8.11/bin/gradle -p ivxv/processor clean build installDist -g=ivxv/common/external/java --refresh-dependencies
+common/external/gradle-8.11/bin/gradle -p processor clean build installDist -g=common/external/java --refresh-dependencies
 make processor
 make auditor
 
