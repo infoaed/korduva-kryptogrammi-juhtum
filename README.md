@@ -84,11 +84,11 @@ Küll aga tekitas probleeme identsete häälekonteinerite töötlemisel auditira
 
 Selle tõttu eemaldati [IngegrityTooli ridadel 268-278](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L268-L278) esimese identse häälekonteinerini jõudes ühekorraga kõik identsed häälekonteinerid, mille tõttu esimesel läbimisel kuvati teadet `present in both the acceptance and rejection logs` ja teisel läbimisel `not found in the acceptance/rejection logs`, sest konteineri räsi enam massiivist ei leitud.
 
-Selle tarkvaravea tagajärjel kuvas auditirakendus poleemikat tekitanud teadet 'E-valimiskasti verifitseerimise logid on terviklikud: ei`, mille kohta audiitori esindaja avalike toimingute käigus ütles, et see on "tegelikult päris paha lause".
+Selle tarkvaravea tagajärjel kuvas auditirakendus poleemikat tekitanud teadet `E-valimiskasti verifitseerimise logid on terviklikud: ei`, mille kohta audiitori esindaja avalike toimingute käigus ütles, et see on "tegelikult päris paha lause".
 
-Audiitori poolt väidetud korduvate krüptogrammide töötlemisega mitte arvestamine algoritmi tasemel oli hoopis identsete häälekonteinerite töötlemise programmeerimisviga, mis oli jäänud koodi sisse vaatamata sellele, et programmeerija oli endale kirjutanud lähtekoodi eraldi märkuse sellest veast hoidumise vajaduse kohta.
+Audiitori poolt väidetud korduvate krüptogrammidega _mitte arvestamine algoritmi tasemel_ oli hoopis identsete häälekonteinerite _töötlemise programmeerimisviga_, mis oli jäänud koodi sisse vaatamata sellele, et programmeerija oli endale kirjutanud lähtekoodi eraldi märkuse sellest veast hoidumise vajaduse kohta.
 
-Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, kus sama auditirakenduse kood esimest korda kasutusel oli.
+Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, kus sama auditirakenduse kood [esimest korda kasutusel oli](https://github.com/valimised/ivxv/commits/published/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java).
 
 Kuna audiitor avalike toimingute raames luges kokku kümmekond korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega ning ei anna adekvaatset hinnangut intsidendi põhjustele, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
 
