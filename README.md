@@ -114,7 +114,7 @@ cd korduva-kryptogrammi-juhtum
 git submodule update --init --recursive
 
 sudo apt update
-sudo apt install -y openjdk-21-jdk
+sudo apt install openjdk-21-jdk
 
 wget https://services.gradle.org/distributions/gradle-8.11-bin.zip
 unzip gradle-8.11-bin.zip -d ivxv/common/external
