@@ -77,8 +77,8 @@ Seejuures käivad määrangud "on olemas nii vastuvõetud kui tagasilükatud hä
 | *******2724 | 18.10 | 11:35:36.370 | igXUmpzFOYrGwfWy3Npc14zHC11lbiHDH6tNxm+AbV0= |
 | *******2724 | 18.10 | 11:59:52.944 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
 | *******2724 | 18.10 | 12:17:30.762 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
-| *******2724 | 18.10 | −−:−−:−−.−−− | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
-| *******2724 | 18.10 | −−:−−:−−.−−− | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
+| *******2724 | 18.10[^2] | −−:−−:−−.−−− | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
+| *******2724 | 18.10[^2] | −−:−−:−−.−−− | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
 | *******2724 | 18.10 | 14:17:36.881 | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
 | *******2724 | 18.10 | 15:11:44.992 | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
 | *******2724 | 18.10 | 15:35:40.053 | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
