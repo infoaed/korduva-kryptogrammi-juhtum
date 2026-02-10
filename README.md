@@ -17,13 +17,15 @@ E-valimiskasti andmetervikluse kontrollimine
 E-valimiskastis sisalduvad andmed on terviklikud
 E-valimiskastis on 14 kvalifitseerimiseks sobivat häält
 E-valimiskastis sisalduvate häälte digiallkirja vormingule vastavuse kontrollimine
- 92% [..............................................    ] 13 / 14
-Viga valija *******2724 hääle **************366+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
 100% [..................................................] 14 / 14
-Viga valija *******2724 hääle **************407+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
-Viga valija *******2724 hääle **************718+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
-Viga valija *******2724 hääle **************724+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
-Viga valija *******2724 hääle **************766+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+Viga valija *******2724 hääle **************119+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+100% [..................................................] 14 / 14
+Viga valija *******2724 hääle **************906+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+100% [..................................................] 14 / 14
+Viga valija *******2724 hääle **************845+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+100% [..................................................] 14 / 14
+Viga valija *******2724 hääle **************944+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
+Viga valija *******2724 hääle **************762+0300 töötlemisel: Registreerimispäringu vastus pole unikaalne
 100% [..................................................] 14 / 14
 E-valimiskastis sisalduvate häälte koguarv: 14
 E-valimiskastis sisalduvate korrektse allkirjaga häälte arv: 9
@@ -33,31 +35,31 @@ E-valimiskastis sisalduvate vigase allkirjaga häälte arv: 5
 Kuna hiljem kuvas auditirakendus audiitorile teadet viiest korduvast krüptogrammist, siis audiitor paistab olevat viis identset häälekonteinerit ja viis korduvat krüptogrammi ekslikult samastanud:
 
 ```
-E-valimiskasti laadimine failist 'conf/../votes.zip'
-E-valimiskast laaditud
+ E-valimiskasti laadimine failist 'conf/../votes.zip'
+ E-valimiskast laaditud
  
-Anonüümitud e-valimiskasti laadimine failist 'conf/../out-4/KOV_2025-bb-4.json'
-Anonüümitud e-hääled laaditud
-
-E-valimiskasti verifitseerimise logifail: conf/../out-2/KOV_2025.question-KOV_2025.check.log1
-Korduvhäälte tühistamise logifail: conf/../out-2/KOV_2025.question-KOV_2025.squash.log2
-Topelthäälte tühistamise logifail: conf/../out-4/KOV_2025.question-KOV_2025.revoke.log2
-E-häälte anonüümimise logifail: conf/../out-4/KOV_2025.question-KOV_2025.anonymize.log3
-E-valimiskasti töötlemisvigade raport: conf/../out-2/ballotbox_errors.txt
+ Anonüümitud e-valimiskasti laadimine failist 'conf/../out-4/KOV_2025-bb-4.json'
+ Anonüümitud e-hääled laaditud
  
-Vastuvõetud häälte seas on korduvaid krüptogramme
-
-There are 5 ciphertext recurrences among the accepted ballots
-Recurring ballot: G6kFbO2dR2GFRfQ1PgVBDXp652p8M0+NRC4o1Dnk3gk=
-Recurring ballot: 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ=
+ E-valimiskasti verifitseerimise logifail: conf/../out-2/KOV_2025.question-KOV_2025.check.log1
+ Korduvhäälte tühistamise logifail: conf/../out-2/KOV_2025.question-KOV_2025.squash.log2
+ Topelthäälte tühistamise logifail: conf/../out-4/KOV_2025.question-KOV_2025.revoke.log2
+ E-häälte anonüümimise logifail: conf/../out-4/KOV_2025.question-KOV_2025.anonymize.log3
+ E-valimiskasti töötlemisvigade raport: conf/../out-2/ballotbox_errors.txt
  
-Ballot '47608082724/20251015055435718+0300' present in both the acceptance and rejection logs
-Ballot '47608082724/20251015055435288+0300' not found in the acceptance/rejection logs
-
-E-valimiskasti verifitseerimise logid on terviklikud: ei
+ Vastuvõetud häälte seas on korduvaid krüptogramme
  
-Auditirakendus lõpetas töö ilma vigadeta
-```
+ There are 5 ciphertext recurrences among the accepted ballots
+ Recurring ballot: G6kFbO2dR2GFRfQ1PgVBDXp652p8M0+NRC4o1Dnk3gk=
+ Recurring ballot: 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ=
+ 
+ Ballot '47608082724/20251017194516845+0300' present in both the acceptance and rejection logs
+ Ballot '47608082724/20251015055435000+0300' not found in the acceptance/rejection logs
+ 
+ E-valimiskasti verifitseerimise logid on terviklikud: ei
+ 
+ Auditirakendus lõpetas töö ilma vigadeta
+ ```
 
 Korduslugemine annab tulemuseks, et korduvaid krüptogramme oli valimiskastis vähemalt 11, aga audiitori ja valimiste korraldaja avalike toimingute käigus antud ütluste kohaselt kokku 13, mille hulgas olid:
 
