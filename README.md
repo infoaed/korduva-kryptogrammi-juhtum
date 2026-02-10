@@ -66,7 +66,9 @@ Korduslugemine annab tulemuseks, et korduvaid krüptogramme oli valimiskastis v�
 
 Audiitor küll märgib korrektselt, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`", kuid samastab ekslikult identsete häälekonteinerite kohta antud teated hiljem korduvate krüptogrammide kohta antud teavitusega `5 ciphertext recurrences`. Siiski puudub _viiel identsel häälekonteineril_ ja _viiel korduval krüptogrammil_ omavaheline seos töötlemis- või auditirakenduse kontekstis ja tegu on täiesti isoleeritud juhtumitega.
 
-Seejuures käivad määrangud "on olemas nii vastuvõetud kui tagasilükatud häälte logis" ja "pole ei vastuvõetud ega tagasilükatud häälte logides" viie töötlusfaasis tuvastatud identse häälekonteineri kohta ja "vastuvõetud häälte hulgas on viis korduvat šifriteksti" auditirakenduse jooksutamise käigus ilmnenud viie korduva krüptogrammi kohta. Valimiskastis olevatest häälekonteineritest ja nende sisust annab ülevaate järgnev tabel:
+Seejuures käivad määrangud "on olemas nii vastuvõetud kui tagasilükatud häälte logis" ja "pole ei vastuvõetud ega tagasilükatud häälte logides" viie töötlusfaasis tuvastatud identse häälekonteineri kohta ja "vastuvõetud häälte hulgas on viis korduvat šifriteksti" auditirakenduse jooksutamise käigus ilmnenud viie korduva krüptogrammi kohta.
+
+Valimiskastis olnud häälekonteineritest ja nende sisust annab ülevaate järgnev tabel:
 
 | Isikukood   |Kuupäev| Kellaaeg     | Krüptogramm                                  |
 | ----------- | ----- | ------------ | ---------------------------------------------|
