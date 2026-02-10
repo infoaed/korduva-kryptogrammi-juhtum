@@ -120,9 +120,7 @@ wget https://services.gradle.org/distributions/gradle-8.11-bin.zip
 unzip gradle-8.11-bin.zip -d ivxv/common/external
 rm gradle-8.11-bin.zip
 
-common/external/gradle-8.11/bin/gradle -p ivxv/processor clean build installDist -g=ivxv/common/external/java --refresh-dependencies
-make -C ivxv processor
-make -C ivxv auditor
+make -C ivxv processor auditor ONLINE=1
 ```
 
 [^1]: Peale siin failis oleva andmeloo inimkeelse kirjelduse on kogu varamu sisu [avalikuks kasutuseks CC0 alusel](https://creativecommons.org/publicdomain/zero/1.0/deed.et). Andmeloo autor on Märt Põder ja seda võib levitada [CC BY tingimustel autorit viidates](https://creativecommons.org/licenses/by/4.0/deed.et).
