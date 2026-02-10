@@ -72,22 +72,22 @@ Valimiskastis olnud häälekonteineritest ja nende sisust annab ülevaate järgn
 
 | Isikukood   |Kuupäev| Kellaaeg     | Krüptogramm                                  |
 | ----------- | ----- | ------------ | ---------------------------------------------|
-| *******2724 | 15.10 | 08:54:35.299 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
+| *******2724 | 15.10 | 08:54:35.000 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
 | *******2724 | 17.10 | 21:05:45.119 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
 | *******2724 | 17.10 | 22:26:35.906 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
 | *******2724 | 17.10 | 22:45:16.845 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
-| *******2724 | 18.10 | 11:35:36.370 | igXUmpzFOYrGwfWy3Npc14zHC11lbiHDH6tNxm+AbV0= |
+| *******2724 | 18.10 | 11:35:36.000 | igXUmpzFOYrGwfWy3Npc14zHC11lbiHDH6tNxm+AbV0= |
 | *******2724 | 18.10 | 11:59:52.944 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
 | *******2724 | 18.10 | 12:17:30.762 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
 | *******2724 | 18.10[^2] | −−:−−:−−.−−− | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
 | *******2724 | 18.10[^2] | −−:−−:−−.−−− | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
-| *******2724 | 18.10 | 14:17:36.881 | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
-| *******2724 | 18.10 | 15:11:44.992 | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
-| *******2724 | 18.10 | 15:35:40.053 | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
-| *******2724 | 18.10 | 15:46:18.830 | BurTcesZloqTOYhekG63m5AwlngAetl8XP6k4FHo0uM= |
-| *******2724 | 18.10 | 16:29:15.173 | cDALrTckJNolLEQTm15mmZHPfoFuHNalfgIO4wvBJMs= |
-| *******2724 | 18.10 | 17:03:46.705 | G6kFbO2dR2GFRfQ1PgVBDXp652p8M0+NRC4o1Dnk3gk= |
-| *******4710 | 18.10 | 17:12:05.618 | G6kFbO2dR2GFRfQ1PgVBDXp652p8M0+NRC4o1Dnk3gk= |
+| *******2724 | 18.10 | 14:17:36.000 | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
+| *******2724 | 18.10 | 15:11:44.000 | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
+| *******2724 | 18.10 | 15:35:40.000 | 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ= |
+| *******2724 | 18.10 | 15:46:18.000 | BurTcesZloqTOYhekG63m5AwlngAetl8XP6k4FHo0uM= |
+| *******2724 | 18.10 | 16:29:15.000 | cDALrTckJNolLEQTm15mmZHPfoFuHNalfgIO4wvBJMs= |
+| *******2724 | 18.10 | 17:03:46.000 | G6kFbO2dR2GFRfQ1PgVBDXp652p8M0+NRC4o1Dnk3gk= |
+| *******4710 | 18.10 | 17:12:05.000 | G6kFbO2dR2GFRfQ1PgVBDXp652p8M0+NRC4o1Dnk3gk= |
 
 Seetõttu on vale audiitori väide, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`" ja "vea andis audiitorrakendus, kuna selle algoritm ei sisalda kasutusjuhtu, kui isetehtud valijarakendusega saadetakse kogujasse üks ja sama krüptogramm korduvalt".
 
