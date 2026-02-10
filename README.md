@@ -126,6 +126,7 @@ rm -r log out-*
 digidoc-tool create --file=out-2/KOV_2025-bb-2.json.sha256sum out-2/KOV_2025-bb-2.json.sha256sum.asice
 ./processor revokeAndAnonymize -c conf/certs.asice -p conf/processor.asice
 ./auditor integrity -c conf/certs.asice -p conf/auditor.asice
+./auditor integrity -c conf/certs.asice -p conf/auditor_force.asice
 ```
 
 Töötlemisrakenduse ja auditirakenduse töölesaamiseks eelnevalt:
