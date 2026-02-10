@@ -118,8 +118,7 @@ Kuna audiitor avalike toimingute raames luges kokku kümmekond korduvat krüptog
 Kui tahad ise sammud läbi teha, siis:
 
 ```
-rm -r out-*
-rm -r log
+rm -r log out-*
 
 ./processor checkAndSquash -c conf/certs.asice -p conf/processor.asice
 digidoc-tool create --file=out-2/KOV_2025-bb-2.json.sha256sum out-2/KOV_2025-bb-2.json.sha256sum.asice
