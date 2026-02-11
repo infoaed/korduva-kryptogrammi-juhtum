@@ -93,7 +93,7 @@ Valimiskastis olnud häälekonteineritest ja nende sisust annab ülevaate järgn
 
 Seetõttu on vale audiitori väide, et "töötlemisrakendus tuvastas viis häält, millel oli määrang `Registreerimisteenuse päring pole unikaalne`" ja "vea andis audiitorrakendus, kuna selle algoritm ei sisalda kasutusjuhtu, kui isetehtud valijarakendusega saadetakse kogujasse üks ja sama krüptogramm korduvalt".
 
-Auditirakenduse eksplitsiitselt arvestas nii korduvate krüptogrammide kui identsete häälekonteineritega, mille kohta leiab märkuse [lähtekoodi kommentaaridest](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L239-L243):
+Auditirakendus eksplitsiitselt arvestas korduvate krüptogrammidega, mille kohta leiab märkuse [lähtekoodi kommentaaridest](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L239-L243):
 
 ```
 // We must use a bag instead of a set since it might happen (statistically unlikely unless intentional)
