@@ -70,9 +70,9 @@ Audiitor küll märgib korrektselt, et "töötlemisrakendus tuvastas viis hääl
 
 Seejuures käivad määrangud "on olemas nii vastuvõetud kui tagasilükatud häälte logis" ja "pole ei vastuvõetud ega tagasilükatud häälte logides" viie töötlusfaasis tuvastatud identse häälekonteineri kohta ja "vastuvõetud häälte hulgas on viis korduvat šifriteksti" auditirakenduse jooksutamise käigus ilmnenud viie korduva krüptogrammi kohta.
 
-Valimiskastis olnud häälekonteineritest ja nende sisust annab ülevaate järgnev tabel:
+Valimiskastis olnud häälekonteineritest ja nende sisust annab ülevaate järgnev tabel, kus krüptogrammid räsi algusega `CM` on identsetes häälekonteinerites ja ülejäänud korduvad krüptogrammid räside algustega `9W` ja `G6` on unikaalsetes häälekonteinerites:
 
-| Isikukood   |Kuupäev| Kellaaeg     | Krüptogramm                                  |
+| Isikukood   |Kuupäev| Kellaaeg     | Krüptogrammi räsi                            |
 | ----------- | ----- | ------------ | ---------------------------------------------|
 | *******2724 | 15.10 | 08:54:35.000 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
 | *******2724 | 17.10 | 21:05:45.119 | CMH7O/SDfPoVvixpW3UJJawHjPKqZMgAF//Gfy5RyUU= |
@@ -101,9 +101,9 @@ Auditirakenduse eksplitsiitselt arvestas nii korduvate krüptogrammide kui ident
 // state of the accepted ballots.
 ```
 
-Ka auditirakenduse tegelikul jooksutamisel arvestas algoritm korrektselt just nimelt korduvate krüptogrammidega ja viie korduva krüptogrammi olemasolu valimiskastis ega selle kohta antud teade auditirakenduse käitamisel probleeme ei tekitanud.
+Ka auditirakenduse tegelikul jooksutamisel arvestas algoritm korrektselt just nimelt korduvate krüptogrammidega (räsi algustea `9W` ja `G6`) ja viie korduva krüptogrammi olemasolu valimiskastis ega selle kohta antud teade auditirakenduse käitamisel probleeme ei tekitanud.
 
-Küll aga tekitas probleeme identsete häälekonteinerite töötlemisel auditirakenduses esinev programmeerimisviga, mille raames ühildati valesti funktsiooni `getValidInvalidSums` parameetritena edasi antud `set` ja `list` andmetüüpe.
+Küll aga tekitas probleeme identsete häälekonteinerite (krüptogrammi räsi algusega `CM`) töötlemisel auditirakenduses esinev programmeerimisviga, mille raames ühildati valesti funktsiooni `getValidInvalidSums` parameetritena edasi antud `set` ja `list` andmetüüpe.
 
 Selle tõttu eemaldati [IngegrityTooli ridadel 268-278](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L268-L278) esimese identse häälekonteinerini jõudes ühekorraga kõik identsed häälekonteinerid, mille tõttu esimesel läbimisel kuvati teadet `present in both the acceptance and rejection logs` ja teisel läbimisel `not found in the acceptance/rejection logs`, sest konteineri räsi enam massiivist ei leitud.
 
