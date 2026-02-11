@@ -101,19 +101,19 @@ Auditirakenduse eksplitsiitselt arvestas nii korduvate krüptogrammide kui ident
 // state of the accepted ballots.
 ```
 
-Ka auditirakenduse tegelikul jooksutamisel arvestas algoritm korrektselt just nimelt korduvate krüptogrammidega (räsi algustea `9W` ja `G6`) ja viie korduva krüptogrammi olemasolu valimiskastis ega selle kohta antud teade auditirakenduse käitamisel probleeme ei tekitanud.
+Ka auditirakenduse tegelikul jooksutamisel arvestas algoritm korrektselt just nimelt korduvate krüptogrammidega (räsi algusega `9W` ja `G6`) ja viie korduva krüptogrammi olemasolu valimiskastis ega selle kohta antud teade auditirakenduse käitamisel probleeme ei tekitanud.
 
-Küll aga tekitas probleeme identsete häälekonteinerite (krüptogrammi räsi algusega `CM`) töötlemisel auditirakenduses esinev programmeerimisviga, mille raames ühildati valesti funktsiooni `getValidInvalidSums` parameetritena edasi antud `set` ja `list` andmetüüpe.
+Küll aga tekitas probleeme identsete häälekonteinerite (räsi algusega `CM`) töötlemisel auditirakenduses esinev programmeerimisviga, mille raames ühildati valesti funktsiooni `getValidInvalidSums` parameetritena edasi antud `set` ja `list` andmetüüpe.
 
-Selle tõttu eemaldati [IngegrityTooli ridadel 268-278](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L268-L278) esimese identse häälekonteinerini jõudes ühekorraga kõik identsed häälekonteinerid, mille tõttu esimesel läbimisel kuvati teadet `present in both the acceptance and rejection logs` ja teisel läbimisel `not found in the acceptance/rejection logs`, sest konteineri räsi enam massiivist ei leitud.
+Selle tõttu eemaldati [IngegrityTooli ridadel 268-278](https://github.com/valimised/ivxv/blob/v1.10.4-KOV2025/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java#L268-L278) esimese identse häälekonteinerini jõudes ühekorraga kõik identsed häälekonteinerid, mille tõttu esimesel läbimisel kuvati teadet `present in both the acceptance and rejection logs` ja teisel läbimisel `not found in the acceptance/rejection logs`, sest otsitavat räsi enam massiivist ei leitud.
 
 Selle tarkvaravea tagajärjel kuvas auditirakendus poleemikat tekitanud teadet `E-valimiskasti verifitseerimise logid on terviklikud: ei`, mille kohta audiitori esindaja avalike toimingute käigus ütles, et see on "tegelikult päris paha lause".
 
-Audiitori poolt väidetud korduvate krüptogrammidega _mitte arvestamine algoritmi tasemel_ oli hoopis identsete häälekonteinerite _töötlemise programmeerimisviga_, mis oli jäänud koodi sisse vaatamata sellele, et programmeerija oli endale kirjutanud lähtekoodi eraldi märkuse sellest veast hoidumise vajaduse kohta.
+Audiitori poolt väidetud korduvate krüptogrammidega _mitte arvestamine algoritmi tasemel_ oli hoopis identsete häälekonteinerite _töötlemise programmeerimisviga_, mis oli jäänud koodi sisse vaatamata sellele, et programmeerija oli endale kirjutanud lähtekoodi spetsiaalse märkuse sellest veast hoidumise vajaduse kohta.
 
 Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, milleks auditirakendus [Kristjan Düüna magistritöö soovitustest lähtuvalt](https://digikogu.taltech.ee/et/Item/50cabbbc-37e7-47f9-9711-940054bd2bfe) koostati ja kus see ka [esimest korda kasutusel oli](https://github.com/valimised/ivxv/commits/published/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java).
 
-Kuna audiitor avalike toimingute raames luges kokku kümmekond korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega ning ei anna adekvaatset hinnangut intsidendi põhjustele, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
+Kuna audiitor avalike toimingute raames luges kokku kümmekond korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega ega anna adekvaatset hinnangut intsidendi põhjustele, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
 
 ## Andmehulga kasutamise juhis
 
