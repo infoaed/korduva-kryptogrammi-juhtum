@@ -111,7 +111,7 @@ Selle tarkvaravea tagajärjel kuvas auditirakendus poleemikat tekitanud teadet `
 
 Audiitori poolt väidetud korduvate krüptogrammidega _mitte arvestamine algoritmi tasemel_ oli hoopis identsete häälekonteinerite _töötlemise programmeerimisviga_, mis oli jäänud koodi sisse vaatamata sellele, et programmeerija oli endale kirjutanud lähtekoodi eraldi märkuse sellest veast hoidumise vajaduse kohta.
 
-Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, kus sama auditirakenduse kood [esimest korda kasutusel oli](https://github.com/valimised/ivxv/commits/published/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java).
+Ka polnud viga tulnud välja testimise käigus ega 2024. aasta Euroopa Parlamendi valimistel, milleks auditirakendus [Kristjan Düüna magistritöö soovitustest lähtuvalt](https://digikogu.taltech.ee/et/Item/50cabbbc-37e7-47f9-9711-940054bd2bfe) koostati ja kus see ka [esimest korda kasutusel oli](https://github.com/valimised/ivxv/commits/published/auditor/src/main/java/ee/ivxv/audit/tools/IntegrityTool.java).
 
 Kuna audiitor avalike toimingute raames luges kokku kümmekond korduvat krüptogrammi, aga aruandes piirdub viie korduva krüptogrammi nimetamisega ning ei anna adekvaatset hinnangut intsidendi põhjustele, siis võib oletada, et korduvate krüptogrammide juhtumi asjaolude varjamise põhjuseks pole üksnes audiitori tehniliste teadmiste piiratus.
 
