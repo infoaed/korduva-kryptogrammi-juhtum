@@ -53,8 +53,8 @@ Kuna hiljem kuvas auditirakendus audiitorile teadet viiest korduvast krüptogram
  Recurring ballot: G6kFbO2dR2GFRfQ1PgVBDXp652p8M0+NRC4o1Dnk3gk=
  Recurring ballot: 9WhZ6IFiaA8Hhw8/vrHBhvY9+VwGz89olrW02YrRvUQ=
  
- Ballot '47608082724/20251017194516845+0300' present in both the acceptance and rejection logs
- Ballot '47608082724/20251015055435000+0300' not found in the acceptance/rejection logs
+ Ballot '*******2724/**************845+0300' present in both the acceptance and rejection logs
+ Ballot '*******2724/**************000+0300' not found in the acceptance/rejection logs
  
  E-valimiskasti verifitseerimise logid on terviklikud: ei
  
